@@ -1,0 +1,15 @@
+---
+title: "Lokal lagring og bruk av sensitive data"
+author: "Are Edvardsen, SKDE"
+date: "August 17, 2017"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+
+---
+
+# Forord {-}
+
+## Introduksjon {-}
+
+## Leserveiledning {-}

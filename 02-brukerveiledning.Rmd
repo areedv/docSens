@@ -1,0 +1,11 @@
+# Brukerveiledning
+
+## Oppsett og bruk av kryptering på lokale lagringsmedier
+
+### Last ned og installér TrueCrypt
+
+### Oppsett av TrueCrypt
+
+### Oppstart av TrueCrypt
+
+## Sletting av data
