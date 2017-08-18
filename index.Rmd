@@ -1,7 +1,7 @@
 ---
 title: "Lokal lagring og bruk av sensitive data"
 author: "Are Edvardsen, SKDE"
-date: "August 17, 2017"
+date: "17\\. august 2017"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -10,6 +10,46 @@ documentclass: book
 
 # Forord {-}
 
+
 ## Introduksjon {-}
+Analyse av sensitive og tidsavgrensede data inngår som en del av de praktiske
+oppgaven SKDE har. Egenskapene til slike
+data vil typisk være at de kun skal nås av en begrenset og definert
+gruppe av brukere samt at de effektivt må kunne slettes ved
+gyldighetsperiodens utløp. Dette gir noen spesielle utfordringer når
+brukere samtidig skal kunne arbeide effektiv og dele slike data seg
+imellom. Typisk for analysevirksomhet er også at det genereres store
+mengder avledede data i form av ulike analysedatasett. Slike avledede
+data må også kunne slettes effektivt når gyldighetsperioden utløper.
+
+Dette dokumentet beskriver hva brukeren skal gjøre for kunne ta i
+bruk den infrastruktur som er etablert ved SKDE for slike formål.
+
 
 ## Leserveiledning {-}
+Målgruppen for denne brukermanualen er analysemedarbeidere
+og personer med teknisk ansvar ved SKDE som skal ha befatning med
+sensitive og tidsavgrensede data. Dokumentet kan også brukes
+som en beskrivelse av de sikkerhetstiltak som er gjort ved SKDE. I så
+fall må det sees i sammenheng med annen utfyllende dokumentasjon som
+SKDE sin sikkerhetsinstruks og internkontrollrutiner.
+Referanser til navn, filnavn, filstier, aksjonspunkter og lignende
+i teksten er _uthevet_.
+
+I tillegg er det gjort uthevinger der det er budskap i
+tilgrensende tekst som er særlig verdt å merke seg:
+
+```{block2, info-text, type='rmdinfo'}
+Utfyllende opplysninger, men som ikke er vesentlig for å følge
+brukerveiledningen.
+```
+
+```{block2, danger-text, type='rmddanger'}
+Et vesentlig budskap som om det blir misforstått innebærer en fare.
+```
+
+
+```{block2, important-text, type='rmdimportant'}
+Utheving av et viktig moment.
+```
+
