@@ -1,0 +1,2 @@
+bookdown::gitbook:
+  css: css/style.css
