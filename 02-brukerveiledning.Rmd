@@ -1,11 +1,63 @@
 # Brukerveiledning
+En forutsetning for effektivt analysearbeid vil ofte være å
+kunne jobbe med data på lokal datamaskin. Når dette gjelder
+sensitive data skal disse krypteres ved lagring også hos
+brukeren. Dette er en forutsetning for å gi en tilstrekkelig
+beskyttelse mot uautorisert innsyn i data, for eksempel ved tyveri,
+og som et tiltak for rent praktisk å kunne slette alle data når disse
+har en begrenset gyldighetsperiode.
+
 
 ## Oppsett og bruk av kryptering på lokale lagringsmedier
+Lagring av sensitive data på egen datamaskin eller andre
+lokal lagringsmedier (_e.g._ CD, minnepinne)
+skal skje kryptert slik at den bare kan leses av den som har riktig
+nøkkel. Sensitive data vil derfor ikke kunne falle uvedkommende i hende
+hvis lagringsmediet kommer på avveie ved for eksempel tap eller
+tyveri. I tillegg vil man kunne oppnå effektiv sletting av data
+ved at respektiv nøkkel slettes.
 
-### Last ned og installér TrueCrypt
+Flere vertøy kan brukes for å oppnå lokal kryptering av
+data. Her er det tatt utgangspunkt i
+[VeraCrypt](https://veracrypt.codeplex.com/)
 
-### Oppsett av TrueCrypt
 
-### Oppstart av TrueCrypt
+### Last ned og installér VeraCrypt
+_VeraCrypt_ er fri og åpen programvare og kan lastes ned gjennom
+lenken som er angitt [her](https://veracrypt.codeplex.com/). Velg
+riktig variant i forhold til ønsket operativsystem,
+her vist for _Windows 7/Vista/XP/2000_ med
+versjon X av _VeraCrypt_.
+
+Kjør den nedlastede fila og godta lisensvilkårene. I det neste
+vinduet velges _Install_ og trykk deretter på
+_Next_. Følgende vindu skal da komme opp:
+
+```{r vc1, echo=FALSE, fig.cap='Installasjon av VeraCrypt.'}
+knitr::include_graphics('images/danger.png')
+```
+
+Installasjonsprogrammet foreslår en plassering av programmet,
+og med mindre det fins gode grunner til å gjøre det motsatte,
+godta det som er valgt. Avhengig av de privilegier man har som
+bruker av sin egen datamaskin, kan man velge å installer
+_VeraCrypt_ for alle brukere (første avkryssningsalternativ i Figur
+\@ref(fig:vc1)). Trykk deretter _Install_. Om alt gikk riktig for
+seg får man et nytt vindu med teksten "VeraCrypt has been successfully
+installed". Trykk _OK_.
+
+
+```{block2, vcdoc-text, type='rmdinfo'}
+Det er mulig det ved slutten av installasjonen gis tilbud om
+å lese dokumentasjon på _VeraCrypt_, og det er
+vel anvendt tid å gjøre. Ved seinere behov fins denne
+dokumentasjonen
+[tilgjengelig på nettsida](https://veracrypt.codeplex.com/documentation)
+der programmet lastes ned fra.
+```
+
+### Oppsett av VeraCrypt
+
+### Oppstart av VeraCrypt
 
 ## Sletting av data

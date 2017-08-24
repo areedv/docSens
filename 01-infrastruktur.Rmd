@@ -1,5 +1,38 @@
 # Infrastruktur
+Den tekniske infrastrukturen som er etablert ved SKDE går i grove
+trekk ut på å behandle data på kryptert form både hva angår lagring og
+transport.
+I tillegg fins det en egen sikkerhetsinstruks som alle ansatte på SKDE
+skal etterleve. Sikkerhetsinstruksen regulerer også spesifikt hvordan
+ansatte med tilgang til sensitive og tidsavgrensede data skal forholde
+seg dette i sitt arbeid.
+
+Bruk av den tekniske infrastrukturen forutsetter tilgang til
+SKDE sitt interne datanettverk. Ansatte på SKDE som er satt opp med
+hjemmekontor (VPN/Citrix) vil kunne nå denne infrastrukturen også utenfor
+SKDE sine kontorlokaler.</para>
+
 
 ## Lokal bruk
+Hver bruker skal benytte verktøy som muliggjør kryptert lagring
+av data på eget/lokalt lagringsmedium slik som harddisk, minnepinne,
+CD-plater og lignende. Nøkkelen som benyttes til kryptering skal være
+tydelig definert slik at sletting av denne kan benyttes som en metode
+for effektiv sletting av lokale data.
+
 
 ## Sikkerhetsinstruksen ved SKDE
+SKDE har en egen sikkerhetsinstruks som skal styre hvordan de
+ansatte skal forholde seg for å ivareta de sikkerhetskrav som gjelder
+for virksomheten. Her er det også beskrevet rutiner for arbeid med
+sensitive data, herunder også data med tidsavgrensning og dermed
+krav til sletting. Stabsleder ved SKDE er ansvarlig for
+sikkerhetsinstruksen og at denne etterleves.
+
+Hver person som skal jobbe med tidsavgrensede data må i forkant
+av utleveringen skrive under en egenerklæring som bekrefter at slike data
+er mottat. Ved gyldighetsperiodens slutt signeres et nytt felt i samme
+erklæring som bekreftelse på at data er slettet i henhold til de
+prosedyrer som sikkerhetsinstruksen gir. Alle egenerklæringer
+oppbevares ved stabsenheten og vil inngå som en del av
+virksomhetens dokumentasjon på egne sikkerhetstiltak.

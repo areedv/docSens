@@ -1,10 +1,8 @@
 ---
 title: "Lokal lagring og bruk av sensitive data"
 author: "Are Edvardsen, SKDE"
-date: "17\\. august 2017"
+date: '`r Sys.Date()`'
 site: bookdown::bookdown_site
-output: bookdown::gitbook
-documentclass: book
 
 ---
 
