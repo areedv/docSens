@@ -45,10 +45,12 @@ blockquote > p:first-child {
   padding-right: .2em;
   font-weight: 500;
 }
+/*
 .level1 .header-section-number {
   display: inline-block;
   border-bottom: 3px solid;
 }
+*/
 .level1 h1 {
   border-bottom: 1px solid;
 }
@@ -57,6 +59,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1.title {
   font-weight: 700;
+}
+h2 {
+  color: #00529c;
+}
+h3 {
+  color: #6caee0;
 }
 .book .book-body .page-wrapper .page-inner section.normal strong {
   font-weight: 500;
