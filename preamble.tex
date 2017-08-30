@@ -1,6 +1,35 @@
+%\usepackage[utf8x]{inputenc}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage[bf,singlelinecheck=off]{caption}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage[norsk]{babel}
+
+
+% Gjør alle lenker mørkeblå
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
+
+% Bruk hf-rager på nivå 1 og 2 overskrifter
+\definecolor{hfmork}{RGB}{0,82,155}
+\definecolor{hflys}{RGB}{104,174,224}
+\subsectionfont{\color{hflys}}
+\sectionfont{\color{hfmork}}
+
+
+% Bruk mørk grå på all annen tekst
+\definecolor{text}{RGB}{40,40,40}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\AtBeginDocument{\globalcolor{text}}
+
 
 %\setmainfont[UprightFeatures={SmallCapsFont=AlegreyaSC-Regular}]{Alegreya}
 
