@@ -3,6 +3,9 @@ title: "Lokal lagring og bruk av sensitive data"
 author: "Are Edvardsen, SKDE"
 date: '`r Sys.Date()`'
 site: bookdown::bookdown_site
+documentclass: book
+papersize: A4
+lof: yes
 
 ---
 
