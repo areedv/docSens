@@ -10,7 +10,7 @@ seg dette i sitt arbeid.
 Bruk av den tekniske infrastrukturen forutsetter tilgang til
 SKDE sitt interne datanettverk. Ansatte på SKDE som er satt opp med
 hjemmekontor (VPN/Citrix) vil kunne nå denne infrastrukturen også utenfor
-SKDE sine kontorlokaler.</para>
+SKDE sine kontorlokaler.
 
 
 ## Lokal bruk
