@@ -6,7 +6,8 @@ site: bookdown::bookdown_site
 documentclass: book
 papersize: A4
 lof: yes
-
+description: "Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF."
+cover-image: images/logo.svg
 ---
 
 # Forord {-}
@@ -55,7 +56,7 @@ Utheving av et viktig moment.
 ```
 
 
-## Dokumenthistorie
+## Dokumenthistorie {-}
 Brukerveiledningn ble opprinnelig utviklet i forbindelse med formell etablering
 av sikkerhetsinstruks og internkontrollrutiner ved SKDE. Gjeldende versjon av
 brukermanual for sikring av data (lagring og sletting) ved lokal lagring er et
@@ -76,4 +77,4 @@ brukermanualen.
 Gjeldende status for dokumentet er versjon 0.9 som ligger til godkjenning hos
 ledergruppa ved SKDE. Are Edvardsen har ansvar for innarbeiding av nødvendige
 endringer fortløpende. Det er også mulig for andre å (foreslå) endringer
-direkte i dokumentet ved "pull requests" gjennom GitHub. 
+direkte i dokumentet ved "pull requests" gjennom GitHub.
