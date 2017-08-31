@@ -54,3 +54,26 @@ Et vesentlig budskap som om det blir misforstått innebærer en fare.
 Utheving av et viktig moment.
 ```
 
+
+## Dokumenthistorie
+Brukerveiledningn ble opprinnelig utviklet i forbindelse med formell etablering
+av sikkerhetsinstruks og internkontrollrutiner ved SKDE. Gjeldende versjon av
+brukermanual for sikring av data (lagring og sletting) ved lokal lagring er et
+tatt ut fra en større
+sammenheng som også omhandlet sikker sentralisert lagring (_Sarkofag_).
+Sikker sentralisert lagring skulle ivareta behovet for samarbeid (om data)
+mellom personer særlig hos analyseenheten ved SKDE. Ved innføring og bruk av
+sentraliserte _SAS_ servere falt dette behovet bort.
+
+Metoden for sikring av data på lokale lagringsmedier var opprinnelig basert på
+programvaren _TrueCrypt_. På et tidspunkt ble videre utvikling og vedlikehold
+av _TrueCrypt_ stanset og trygg framtidig bruk kunne derfor ikke garanteres.
+Siden _TrueCrypt_ var i utsrakt bruk av mange ble teknologien videreført av
+andre aktører men da under navnet _VeraCrypt_. De hos SKDE som fra før har
+brukt _TrueCrypt_ vil gjenkjenne det meste som beskrives i denne
+brukermanualen.
+
+Gjeldende status for dokumentet er versjon 0.9 som ligger til godkjenning hos
+ledergruppa ved SKDE. Are Edvardsen har ansvar for innarbeiding av nødvendige
+endringer fortløpende. Det er også mulig for andre å (foreslå) endringer
+direkte i dokumentet ved "pull requests" gjennom GitHub. 
