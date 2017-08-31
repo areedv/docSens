@@ -37,7 +37,7 @@ man nødt til å be HNIKT om hjelp til installasjonen
 
 Kjør den nedlastede fila og godta lisensvilkårene. I det neste
 vinduet velges _Install_ og trykk deretter på
-_Next_. Følgende vindu skal da komme opp:
+_Next_. Vinduet vist i figure \@ref(fig:vc1) skal da komme opp:
 
 ```{r vc1, echo=FALSE, fig.cap='Installasjon av VeraCrypt.', out.width = '50%', fig.align='center'}
 knitr::include_graphics('images/vc1.png')
