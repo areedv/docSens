@@ -27,7 +27,7 @@ _VeraCrypt_ er fri og åpen programvare og kan lastes ned gjennom
 lenken som er angitt [her](https://veracrypt.codeplex.com/). Velg
 riktig variant i forhold til ønsket operativsystem,
 her vist for _Windows 7/Vista/XP/2000_ med
-versjon X av _VeraCrypt_.
+versjon 1.21 av _VeraCrypt_.
 
 ```{block2, vc-install, type='rmdimportant'}
 Intallasjon av _VeraCrypt_ krever adminstratorrett til datamaskinen som installasjonen
