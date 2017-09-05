@@ -11,10 +11,11 @@ before_script:
 before_install:                           # Install Ruby and html-proofer
   - rvm get stable --auto-dotfiles
   - rvm install 2.3.3
-    #  - gem install html-proofer
+  - gem install html-proofer
 
 script:
   - ./_build.sh
+  - htmlproofer ./docs 
 
 deploy:
   provider: pages                         # Specify the gh-pages deployment method
