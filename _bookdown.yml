@@ -2,3 +2,5 @@ book_filename: docSens
 language:
   label:
     fig: "Figur "
+output_dir: docs
+
