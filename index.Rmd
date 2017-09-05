@@ -79,4 +79,4 @@ brukermanualen.
 Gjeldende status for dokumentet er versjon 0.9 som ligger til godkjenning hos
 ledergruppa ved SKDE. Are Edvardsen har ansvar for innarbeiding av nødvendige
 endringer fortløpende. Det er også mulig for andre å (foreslå) endringer
-direkte i dokumentet ved "pull requests" gjennom GitHub.
+direkte i dokumentet ved "pull requests" gjennom [GitHub](https://github.com/areedv/docSens/).
