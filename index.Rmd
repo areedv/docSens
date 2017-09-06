@@ -12,7 +12,7 @@ cover-image: images/logo.svg
 
 # Forord {-}
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://helse-nord.no/skde'}
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://helse-nord.no/skde', fig.cap="skde-logo"}
 knitr::include_graphics('images/logo.svg', dpi = NA)
 ```
 
