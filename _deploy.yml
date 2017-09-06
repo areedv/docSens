@@ -1,3 +1,5 @@
+## Currently not needed as Travis already pushes to gh-pages branch
+
 # configure your name and email if you have not done so
 git config --global user.email "are.edvardsen@helse-nord.no"
 git config --global user.name "Are Edvardsen"
