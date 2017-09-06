@@ -1,4 +1,5 @@
 # Lokal lagring og bruk av sensitive data
 
-Repository for [denne](https://bookdown.org/areedv/docSens/) "boka".
+Ved endringer lager [Travis](https://travis-ci.org/) en ny utgave av boka og
+den finnes [her](https://areedv.github.io/docSens/)
 
