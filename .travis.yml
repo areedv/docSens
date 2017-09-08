@@ -9,7 +9,7 @@ before_script:
   - chmod +x ./_build.sh
 
 before_install:                           # Install Ruby and html-proofer
-  - sudo apt-get update && sudo apt-get --reinstall install -qq texlive-lang-european
+  - sudo apt-get update && sudo apt-get --reinstall install -qq texlive-lang-european texlive-lang-norwegian
   - rvm get stable --auto-dotfiles
   - rvm install 2.3.3
   - gem install html-proofer
