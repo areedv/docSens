@@ -1,3 +1,3 @@
 #!/bin/sh
 
-Rscript -e "bookdown::render_book('index.Rmd', output_format=c('html_document'))"
+Rscript -e "rmarkdown::render_site(output_format = c('bookdown::html_book', 'bookdown::pdf_book', 'bookdown::epub_book'), encoding = 'UTF-8')"
