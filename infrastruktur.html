@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lokal lagring og bruk av sensitive data</title>
+  <meta name="description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF.">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Lokal lagring og bruk av sensitive data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/logo.svg" />
+  <meta property="og:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lokal lagring og bruk av sensitive data" />
+  
+  <meta name="twitter:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  <meta name="twitter:image" content="images/logo.svg" />
+
+<meta name="author" content="Are Edvardsen, SKDE">
+
+
+<meta name="date" content="2017-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="brukerveiledning.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Forord</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#introduksjon"><i class="fa fa-check"></i>Introduksjon</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#leserveiledning"><i class="fa fa-check"></i>Leserveiledning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dokumenthistorie"><i class="fa fa-check"></i>Dokumenthistorie</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="infrastruktur.html"><a href="infrastruktur.html"><i class="fa fa-check"></i><b>1</b> Infrastruktur</a><ul>
+<li class="chapter" data-level="1.1" data-path="infrastruktur.html"><a href="infrastruktur.html#lokal-bruk"><i class="fa fa-check"></i><b>1.1</b> Lokal bruk</a></li>
+<li class="chapter" data-level="1.2" data-path="infrastruktur.html"><a href="infrastruktur.html#sikkerhetsinstruksen-ved-skde"><i class="fa fa-check"></i><b>1.2</b> Sikkerhetsinstruksen ved SKDE</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="brukerveiledning.html"><a href="brukerveiledning.html"><i class="fa fa-check"></i><b>2</b> Brukerveiledning</a><ul>
+<li class="chapter" data-level="2.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-og-bruk-av-kryptering-pa-lokale-lagringsmedier"><i class="fa fa-check"></i><b>2.1</b> Oppsett og bruk av kryptering på lokale lagringsmedier</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#last-ned-og-installer-veracrypt"><i class="fa fa-check"></i><b>2.1.1</b> Last ned og installér VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.2" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-av-veracrypt"><i class="fa fa-check"></i><b>2.1.2</b> Oppsett av VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.3" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppstart-av-veracrypt"><i class="fa fa-check"></i><b>2.1.3</b> Oppstart av VeraCrypt</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Lokal lagring og bruk av sensitive data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="infrastruktur" class="section level1">
+<h1><span class="header-section-number">1</span> Infrastruktur</h1>
+<p>Den tekniske infrastrukturen som er etablert ved SKDE går i grove trekk ut på å behandle data på kryptert form både hva angår lagring og transport. I tillegg fins det en egen sikkerhetsinstruks som alle ansatte på SKDE skal etterleve. Sikkerhetsinstruksen regulerer også spesifikt hvordan ansatte med tilgang til sensitive og tidsavgrensede data skal forholde seg dette i sitt arbeid.</p>
+<p>Bruk av den tekniske infrastrukturen forutsetter tilgang til SKDE sitt interne datanettverk. Ansatte på SKDE som er satt opp med hjemmekontor (VPN/Citrix) vil kunne nå denne infrastrukturen også utenfor SKDE sine kontorlokaler.</p>
+<div id="lokal-bruk" class="section level2">
+<h2><span class="header-section-number">1.1</span> Lokal bruk</h2>
+<p>Hver bruker skal benytte verktøy som muliggjør kryptert lagring av data på eget/lokalt lagringsmedium slik som harddisk, minnepinne, CD-plater og lignende. Nøkkelen som benyttes til kryptering skal være tydelig definert slik at sletting av denne kan benyttes som en metode for effektiv sletting av lokale data.</p>
+</div>
+<div id="sikkerhetsinstruksen-ved-skde" class="section level2">
+<h2><span class="header-section-number">1.2</span> Sikkerhetsinstruksen ved SKDE</h2>
+<p>SKDE har en egen sikkerhetsinstruks som skal styre hvordan de ansatte skal forholde seg for å ivareta de sikkerhetskrav som gjelder for virksomheten. Her er det også beskrevet rutiner for arbeid med sensitive data, herunder også data med tidsavgrensning og dermed krav til sletting. Stabsleder ved SKDE er ansvarlig for sikkerhetsinstruksen og at denne etterleves.</p>
+<p>Hver person som skal jobbe med tidsavgrensede data må i forkant av utleveringen skrive under en egenerklæring som bekrefter at slike data er mottat. Ved gyldighetsperiodens slutt signeres et nytt felt i samme erklæring som bekreftelse på at data er slettet i henhold til de prosedyrer som sikkerhetsinstruksen gir. Alle egenerklæringer oppbevares ved stabsenheten og vil inngå som en del av virksomhetens dokumentasjon på egne sikkerhetstiltak.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="brukerveiledning.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/areedv/docSens/edit/master/01-infrastruktur.Rmd",
+"text": "Edit"
+},
+"download": ["docSens.pdf", "docSens.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

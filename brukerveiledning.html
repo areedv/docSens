@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lokal lagring og bruk av sensitive data</title>
+  <meta name="description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF.">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Lokal lagring og bruk av sensitive data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/logo.svg" />
+  <meta property="og:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lokal lagring og bruk av sensitive data" />
+  
+  <meta name="twitter:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  <meta name="twitter:image" content="images/logo.svg" />
+
+<meta name="author" content="Are Edvardsen, SKDE">
+
+
+<meta name="date" content="2017-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="infrastruktur.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Forord</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#introduksjon"><i class="fa fa-check"></i>Introduksjon</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#leserveiledning"><i class="fa fa-check"></i>Leserveiledning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dokumenthistorie"><i class="fa fa-check"></i>Dokumenthistorie</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="infrastruktur.html"><a href="infrastruktur.html"><i class="fa fa-check"></i><b>1</b> Infrastruktur</a><ul>
+<li class="chapter" data-level="1.1" data-path="infrastruktur.html"><a href="infrastruktur.html#lokal-bruk"><i class="fa fa-check"></i><b>1.1</b> Lokal bruk</a></li>
+<li class="chapter" data-level="1.2" data-path="infrastruktur.html"><a href="infrastruktur.html#sikkerhetsinstruksen-ved-skde"><i class="fa fa-check"></i><b>1.2</b> Sikkerhetsinstruksen ved SKDE</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="brukerveiledning.html"><a href="brukerveiledning.html"><i class="fa fa-check"></i><b>2</b> Brukerveiledning</a><ul>
+<li class="chapter" data-level="2.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-og-bruk-av-kryptering-pa-lokale-lagringsmedier"><i class="fa fa-check"></i><b>2.1</b> Oppsett og bruk av kryptering på lokale lagringsmedier</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#last-ned-og-installer-veracrypt"><i class="fa fa-check"></i><b>2.1.1</b> Last ned og installér VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.2" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-av-veracrypt"><i class="fa fa-check"></i><b>2.1.2</b> Oppsett av VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.3" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppstart-av-veracrypt"><i class="fa fa-check"></i><b>2.1.3</b> Oppstart av VeraCrypt</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Lokal lagring og bruk av sensitive data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="brukerveiledning" class="section level1">
+<h1><span class="header-section-number">2</span> Brukerveiledning</h1>
+<p>En forutsetning for effektivt analysearbeid vil ofte være å kunne jobbe med data på lokal datamaskin. Når dette gjelder sensitive data skal disse krypteres ved lagring også hos brukeren. Dette er en forutsetning for å gi en tilstrekkelig beskyttelse mot uautorisert innsyn i data, for eksempel ved tyveri, og som et tiltak for rent praktisk å kunne slette alle data når disse har en begrenset gyldighetsperiode.</p>
+<div id="oppsett-og-bruk-av-kryptering-pa-lokale-lagringsmedier" class="section level2">
+<h2><span class="header-section-number">2.1</span> Oppsett og bruk av kryptering på lokale lagringsmedier</h2>
+<p>Lagring av sensitive data på egen datamaskin eller andre lokal lagringsmedier (<em>e.g.</em> CD, minnepinne) skal skje kryptert slik at den bare kan leses av den som har riktig nøkkel. Sensitive data vil derfor ikke kunne falle uvedkommende i hende hvis lagringsmediet kommer på avveie ved for eksempel tap eller tyveri. I tillegg vil man kunne oppnå effektiv sletting av data ved at respektiv nøkkel slettes.</p>
+<p>Flere vertøy kan brukes for å oppnå lokal kryptering av data. Her er det tatt utgangspunkt i <a href="https://veracrypt.codeplex.com/">VeraCrypt</a></p>
+<div id="last-ned-og-installer-veracrypt" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Last ned og installér VeraCrypt</h3>
+<p><em>VeraCrypt</em> er fri og åpen programvare og kan lastes ned gjennom lenken som er angitt <a href="https://veracrypt.codeplex.com/">her</a>. Velg riktig variant i forhold til ønsket operativsystem, her vist for <em>Windows 7/Vista/XP/2000</em> med versjon 1.21 av <em>VeraCrypt</em>.</p>
+
+<div class="rmdimportant">
+Intallasjon av <em>VeraCrypt</em> krever adminstratorrett til datamaskinen som installasjonen foretas på. Hvis man fra før ikke har (lokal) administratortilgang er man nødt til å be HNIKT om hjelp til installasjonen
+</div>
+<p></p>
+<p>Kjør den nedlastede fila og godta lisensvilkårene. I det neste vinduet velges <em>Install</em> og trykk deretter på <em>Next</em>. Vinduet vist i figure <a href="brukerveiledning.html#fig:vc1">2.1</a> skal da komme opp:</p>
+<div class="figure" style="text-align: center"><span id="fig:vc1"></span>
+<img src="images/vc1.png" alt="Installasjon av VeraCrypt." width="50%" />
+<p class="caption">
+Figur 2.1: Installasjon av VeraCrypt.
+</p>
+</div>
+<p>Installasjonsprogrammet foreslår en plassering av programmet, og med mindre det fins gode grunner til å gjøre det motsatte, godta det som er valgt. Avhengig av de privilegier man har som bruker av sin egen datamaskin, kan man velge å installer <em>VeraCrypt</em> for alle brukere (første avkryssningsalternativ i Figur <a href="brukerveiledning.html#fig:vc1">2.1</a>). Trykk deretter <em>Install</em>. Om alt gikk riktig for seg får man et nytt vindu med teksten “VeraCrypt has been successfully installed”. Trykk <em>OK</em>.</p>
+
+<div class="rmdinfo">
+Det er mulig det ved slutten av installasjonen gis tilbud om å lese dokumentasjon på <em>VeraCrypt</em>, og det er vel anvendt tid å gjøre. Ved seinere behov fins denne dokumentasjonen <a href="https://veracrypt.codeplex.com/documentation">tilgjengelig på nettsida</a> der programmet lastes ned fra.
+</div>
+<p></p>
+</div>
+<div id="oppsett-av-veracrypt" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Oppsett av VeraCrypt</h3>
+<p><em>VeraCrypt</em> kan benyttes på mange vis, og denne veilednigen er ikke uttømmende men beskriver typisk bruk ved SKDE. Ved behov utover dette må man lese tilgjengelig dokumentasjon samt konferere med andre brukere.</p>
+
+<div class="rmdimportant">
+Etter riktig oppsett av <em>VeraCrypt</em> krypteres informasjon ved å lagre data til en disk som <em>VeraCrypt</em> har satt opp. <em>VeraCrypt</em> kaller dette for et <em>volum</em> eller <em>diskvolum</em> og vil for eksempel i <em>Windows</em> framstå som hvilken som helst annen disk med en egen bokstav (<em>e.g. I:\</em>). Det som skjer under oppsett av et <em>VeraCrypt</em> volum er at ei fil med definert størrelse blir satt av på et angitt lagringsmedie. <em>VeraCrypt</em> kaller denne fila for en kryptert filkontainer og det er denne fila som inneholder krypterte data. Ved oppstart monterer <em>VeraCrypt</em> denne fila som et volum som det da er mulig å skrive til (lagre) og lese fra (åpne).
+</div>
+<p></p>
+<p>Følgende viser et oppsett av en kryptert disk på 100 Mb (i mange tilfeller vil det være behov for å sett av mer plass). Ved oppstart av <em>VeraCrypt</em> vil man se vinduet vist i figur <a href="brukerveiledning.html#fig:vc2">2.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc2"></span>
+<img src="images/vc2.png" alt="Oppsett av ny kryptert disk." width="50%" />
+<p class="caption">
+Figur 2.2: Oppsett av ny kryptert disk.
+</p>
+</div>
+<p>Trykk på <em>Create volume</em>. I påfølgende vindu (ikke vist) velges <em>Create an encrypted file container</em> og trykk <em>Next</em>. I vinduet deretter velg <em>Standard VeraCrypt volume</em> og trykk <em>Next</em>. Da skal man se vinduet vist i figur <a href="brukerveiledning.html#fig:vc3">2.3</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc3"></span>
+<img src="images/vc3.png" alt="Oppsett av kryptert filkontainer." width="50%" />
+<p class="caption">
+Figur 2.3: Oppsett av kryptert filkontainer.
+</p>
+</div>
+<p>Her definerer man den krypterte filkontaineren, i dette tilfellet <em>C:\sens\prosjket1</em>. Fjern avkryssing for <em>Never save history</em> og trykk <em>Next</em>. I det påfølgende vinduet, trykk <em>Next</em> uten å endre på det som installasjonsprogrammet har foreslått av innstillinger.</p>
+
+<div class="rmdinfo">
+Kryptoalgoritmen som benyttesom standard i <em>VeraCrypt</em> er <em>AES-256</em> som gir god nok beskyttelse for sensitive data som SKDE er befatning med. Det er derfor ingen grunn til ikke å velge standard instilling her.
+</div>
+<p></p>
+<p>Deretter angis størrelsen på det nye krypterte diskvolumet, eksempelvis slik det er vist i <a href="brukerveiledning.html#fig:vc4">2.4</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc4"></span>
+<img src="images/vc4.png" alt="Definisjon av volumstørrelse" width="50%" />
+<p class="caption">
+Figur 2.4: Definisjon av volumstørrelse
+</p>
+</div>
+<p>Trykk <em>Next</em>. I påfølgende vindu velger (og bekrefter) man et sterkt passord (åtte tegn bestående av store og små bokstaver, tall og spesialtegn) og krysser av for <em>Use keyfiles</em> slik det er vist i <a href="brukerveiledning.html#fig:vc5">2.5</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc5"></span>
+<img src="images/vc5.png" alt="Definisjon av passord." width="50%" />
+<p class="caption">
+Figur 2.5: Definisjon av passord.
+</p>
+</div>
+<p>Trykk på <em>Keyfiles…</em>. I det neste vinduet (ikke vist) trykker man på <em>Generate Random Keyfile…</em>. Følg installasjonsveilederen for å lage nøkkelfila som deretter lagres på et egnet sted.</p>
+
+<div class="rmdimportant">
+Ta godt vare på nøkkelen. Om den endres eller mistes, så vil alle data som er kryptert ved hjelp av denne nøkkelen være tapt for alltid. Ikke la nøkkelen ligge på samme lagringsmedie som de krypterte data. En god plassering av nøkkelen vil for SKDE sine ansatte være på personlig område på nettverksdisk (<em>P:\</em>). Da er nøkkelen skilt fra data (som ligger på på lokal disk) samt at den er bedre sikret i forhold til tap som for eksempel ved diskfeil.
+</div>
+<p></p>
+<p>Trykk <em>Close</em> i vinduet <em>VeraCrypt - Keyfile Generator</em> (ikke vist). Tilbake i vinduet <em>VeraCrypt - Keyfiles</em> (ikke vist), trykk <em>Add files…</em> og velg deretter nøkkelfila som nettopp ble laget og trykk <em>OK</em>. Tilbake i vinduet vist i <a href="brukerveiledning.html#fig:vc5">2.5</a>, trykk <em>Next</em>.</p>
+
+<div class="rmdinfo">
+Som standard brukes oppgitt passord som utgangspunkt for kryptovariabel i <em>VeraCrypt</em>. Ved en slik tilnærming vil et vanlig stertkt passord (åtte tegn bestående av store og små bokstaver, tall og spesialtegn) være utilstrekkelig for å oppnå en sterk nok kryptering. Dette vil man nå kunne få en advarsel om, men så lenge en nøkkelfil og et stertkt passord er definert kan man ignorere denne advarselen.
+</div>
+<p></p>
+<p>I det nest vinduet velger man <em>FAT</em> under <em>Filesystem</em> og trykker <em>Format</em> slik vist i <a href="brukerveiledning.html#fig:vc6">2.6</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc6"></span>
+<img src="images/vc6.png" alt="Formatering av diskvolum." width="50%" />
+<p class="caption">
+Figur 2.6: Formatering av diskvolum.
+</p>
+</div>
+<p>Når filkontaineren er ferdig formatert vil man få en bekreftelse på at dette er gjennomført slik vist i <a href="brukerveiledning.html#fig:vc7">2.7</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc7"></span>
+<img src="images/vc7.png" alt="Formatering av OK." width="50%" />
+<p class="caption">
+Figur 2.7: Formatering av OK.
+</p>
+</div>
+<p>Trykk <em>OK</em> og deretter <em>Exit</em> i det neste vinduet.</p>
+</div>
+<div id="oppstart-av-veracrypt" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> Oppstart av VeraCrypt</h3>
+<p>Start programmet <em>VeraCrypt</em> og angi stasjonsbokstav (<em>i.e.</em> monteringspunkt) og tilhørende filkontainer slik det er vist i <a href="brukerveiledning.html#fig:vc8">2.8</a>. Her er stasjonsbokstav angitt som <em>I:\</em> og fikontainer er <em>C:\sens\prosjekt1</em>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc8"></span>
+<img src="images/vc8.png" alt="Montering av diskvolum" width="50%" />
+<p class="caption">
+Figur 2.8: Montering av diskvolum
+</p>
+</div>
+<p>Trykk på <em>Mount</em>. Deretter angis passord og nøkkelfil slik det er vist i figur <a href="brukerveiledning.html#fig:vc9">2.9</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc9"></span>
+<img src="images/vc9.png" alt="Definisjon av passord og nøkkelfil" width="50%" />
+<p class="caption">
+Figur 2.9: Definisjon av passord og nøkkelfil
+</p>
+</div>
+<p>Når man trykker <em>Keyfiles…</em> vil man i neste vindu (ikke vist) velges riktig nøkkelfil ved å trykke på <em>Add files…</em>. Trykk deretter <em>OK</em>. Tilbake i vinduet vist i figur <a href="brukerveiledning.html#fig:vc9">2.9</a> trykker man <em>OK</em>. Deretter skal man kunne se at en ny disk er lagt til (figur <a href="brukerveiledning.html#fig:vc10">2.10</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:vc10"></span>
+<img src="images/vc10.png" alt="Kryptert diskvolum er satt opp." width="50%" />
+<p class="caption">
+Figur 2.10: Kryptert diskvolum er satt opp.
+</p>
+</div>
+<p>Det nye <em>VeraCrypt</em> diskvolumet er nå klart til bruk, på samme vis som hvilken som helst annen disk. Alle filer som skrives hit, i dette tilfellet <em>I:\</em>, vil krypteres før de lagres og filer som leses herfra dekrypteres før de åpnes.</p>
+<p>For å gjøre diskvolumet utilgjengelig må det avmonteres. Merk aktuell stasjonsbokstav og trykk på <em>Dismount</em> slik det er vist i figur <a href="brukerveiledning.html#fig:vc11">2.11</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:vc11"></span>
+<img src="images/vc11.png" alt="Avmontering av diskvolum." width="50%" />
+<p class="caption">
+Figur 2.11: Avmontering av diskvolum.
+</p>
+</div>
+<p>Oppsett og bruk vil være tilsvarende om man ønsker å bruke <em>VeraCrypt</em> til å kryptere data på andre lagringsmedier, som for eksempel en minnepinne. For bruk av minnepinne vil det være uhensiktsmessig å benytte en separat nøkkel, men da må man velge et passord som gir mer beskyttelse og som er i henhold til de anbefalinger <em>VeraCrypt</em> gir. Sletting av data på minnepinne må derfor også håndteres særlig siden det ikke fins noen nøkkel som kan slettes. Her bør man prøve seg frem og spør gjerne andre med erfaring fra bruk av <em>VeraCrypt</em>.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="infrastruktur.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/areedv/docSens/edit/master/02-brukerveiledning.Rmd",
+"text": "Edit"
+},
+"download": ["docSens.pdf", "docSens.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

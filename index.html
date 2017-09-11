@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lokal lagring og bruk av sensitive data</title>
+  <meta name="description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF.">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Lokal lagring og bruk av sensitive data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/logo.svg" />
+  <meta property="og:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lokal lagring og bruk av sensitive data" />
+  
+  <meta name="twitter:description" content="Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og sletting av data ved Senter for klinisk dokumentajson og evaluering (SKDE), Helse Nord RHF." />
+  <meta name="twitter:image" content="images/logo.svg" />
+
+<meta name="author" content="Are Edvardsen, SKDE">
+
+
+<meta name="date" content="2017-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+<link rel="next" href="infrastruktur.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Forord</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#introduksjon"><i class="fa fa-check"></i>Introduksjon</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#leserveiledning"><i class="fa fa-check"></i>Leserveiledning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#dokumenthistorie"><i class="fa fa-check"></i>Dokumenthistorie</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="infrastruktur.html"><a href="infrastruktur.html"><i class="fa fa-check"></i><b>1</b> Infrastruktur</a><ul>
+<li class="chapter" data-level="1.1" data-path="infrastruktur.html"><a href="infrastruktur.html#lokal-bruk"><i class="fa fa-check"></i><b>1.1</b> Lokal bruk</a></li>
+<li class="chapter" data-level="1.2" data-path="infrastruktur.html"><a href="infrastruktur.html#sikkerhetsinstruksen-ved-skde"><i class="fa fa-check"></i><b>1.2</b> Sikkerhetsinstruksen ved SKDE</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="brukerveiledning.html"><a href="brukerveiledning.html"><i class="fa fa-check"></i><b>2</b> Brukerveiledning</a><ul>
+<li class="chapter" data-level="2.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-og-bruk-av-kryptering-pa-lokale-lagringsmedier"><i class="fa fa-check"></i><b>2.1</b> Oppsett og bruk av kryptering på lokale lagringsmedier</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="brukerveiledning.html"><a href="brukerveiledning.html#last-ned-og-installer-veracrypt"><i class="fa fa-check"></i><b>2.1.1</b> Last ned og installér VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.2" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppsett-av-veracrypt"><i class="fa fa-check"></i><b>2.1.2</b> Oppsett av VeraCrypt</a></li>
+<li class="chapter" data-level="2.1.3" data-path="brukerveiledning.html"><a href="brukerveiledning.html#oppstart-av-veracrypt"><i class="fa fa-check"></i><b>2.1.3</b> Oppstart av VeraCrypt</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Lokal lagring og bruk av sensitive data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Lokal lagring og bruk av sensitive data</h1>
+<h4 class="author"><em>Are Edvardsen, SKDE</em></h4>
+<h4 class="date"><em>2017-09-11</em></h4>
+</div>
+<div id="forord" class="section level1 unnumbered">
+<h1>Forord</h1>
+<p><a href="https://helse-nord.no/skde" target="_blank"><img src="images/logo.svg" style="display: block; margin: auto;" /></a></p>
+<div id="introduksjon" class="section level2 unnumbered">
+<h2>Introduksjon</h2>
+<p>Analyse av sensitive og tidsavgrensede data inngår som en del av de praktiske oppgaven SKDE har. Egenskapene til slike data vil typisk være at de kun skal nås av en begrenset og definert gruppe av brukere samt at de effektivt må kunne slettes ved gyldighetsperiodens utløp. Dette gir noen spesielle utfordringer når brukere samtidig skal kunne arbeide effektiv og dele slike data seg imellom. Typisk for analysevirksomhet er også at det genereres store mengder avledede data i form av ulike analysedatasett. Slike avledede data må også kunne slettes effektivt når gyldighetsperioden utløper.</p>
+<p>Dette dokumentet beskriver hva brukeren skal gjøre for kunne ta i bruk den infrastruktur som er etablert ved SKDE for slike formål.</p>
+</div>
+<div id="leserveiledning" class="section level2 unnumbered">
+<h2>Leserveiledning</h2>
+<p>Målgruppen for denne brukermanualen er analysemedarbeidere og personer med teknisk ansvar ved SKDE som skal ha befatning med sensitive og tidsavgrensede data. Dokumentet kan også brukes som en beskrivelse av de sikkerhetstiltak som er gjort ved SKDE. I så fall må det sees i sammenheng med annen utfyllende dokumentasjon som SKDE sin sikkerhetsinstruks og internkontrollrutiner. Referanser til navn, filnavn, filstier, aksjonspunkter og lignende i teksten er <em>uthevet</em>.</p>
+<p>I tillegg er det gjort uthevinger der det er budskap i tilgrensende tekst som er særlig verdt å merke seg:</p>
+
+<div class="rmdinfo">
+<p>Utfyllende opplysninger, men som ikke er vesentlig for å følge brukerveiledningen.</p>
+</div>
+<p></p>
+
+<div class="rmdimportant">
+<p>Utheving av et viktig moment.</p>
+</div>
+<p></p>
+
+<div class="rmddanger">
+<p>Et vesentlig budskap som om det blir misforstått innebærer en fare.</p>
+</div>
+<p></p>
+</div>
+<div id="dokumenthistorie" class="section level2 unnumbered">
+<h2>Dokumenthistorie</h2>
+<p>Brukerveiledningn ble opprinnelig utviklet i forbindelse med formell etablering av sikkerhetsinstruks og internkontrollrutiner ved SKDE. Gjeldende versjon av brukermanual for sikring av data (lagring og sletting) ved lokal lagring er et tatt ut fra en større sammenheng som også omhandlet sikker sentralisert lagring (<em>Sarkofag</em>). Sikker sentralisert lagring skulle ivareta behovet for samarbeid (om data) mellom personer særlig hos analyseenheten ved SKDE. Ved innføring og bruk av sentraliserte <em>SAS</em> servere falt dette behovet bort.</p>
+<p>Metoden for sikring av data på lokale lagringsmedier var opprinnelig basert på programvaren <em>TrueCrypt</em>. På et tidspunkt ble videre utvikling og vedlikehold av <em>TrueCrypt</em> stanset og trygg framtidig bruk kunne derfor ikke garanteres. Siden <em>TrueCrypt</em> var i utsrakt bruk av mange ble teknologien videreført av andre aktører men da under navnet <em>VeraCrypt</em>. De hos SKDE som fra før har brukt <em>TrueCrypt</em> vil gjenkjenne det meste som beskrives i denne brukermanualen.</p>
+<p>Gjeldende status for dokumentet er versjon 0.9 som ligger til godkjenning hos ledergruppa ved SKDE. Are Edvardsen har ansvar for innarbeiding av nødvendige endringer fortløpende. Det er også mulig for andre å (foreslå) endringer direkte i dokumentet ved “pull requests” gjennom <a href="https://github.com/areedv/docSens/">GitHub</a>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="infrastruktur.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/areedv/docSens/edit/master/index.Rmd",
+"text": "Edit"
+},
+"download": ["docSens.pdf", "docSens.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
