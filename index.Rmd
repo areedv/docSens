@@ -2,14 +2,6 @@
 title: "Lokal lagring og bruk av sensitive data"
 author: "Are Edvardsen, SKDE"
 date: '`r Sys.Date()`'
-output:
-  pdf_document:
-    includes:
-      in_header: preamble.tex
-    keep_tex: yes
-    latex_engine: xelatex
-  html_document:
-    keep_md: yes
 documentclass: book
 lof: yes
 description: Veiledning i installasjon og bruk av VeraCrypt for sikker lagring og
