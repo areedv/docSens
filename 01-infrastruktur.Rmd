@@ -1,9 +1,8 @@
 # Infrastruktur
 Den tekniske infrastrukturen som er etablert ved SKDE går i grove
 trekk ut på å behandle data på kryptert form både hva angår lagring og
-transport.
-I tillegg fins det en egen sikkerhetsinstruks som alle ansatte på SKDE
-skal etterleve. Sikkerhetsinstruksen regulerer også spesifikt hvordan
+transport. I tillegg fins det en egen sikkerhetsinstruks som alle ansatte på
+SKDE skal etterleve. Sikkerhetsinstruksen regulerer også spesifikt hvordan
 ansatte med tilgang til sensitive og tidsavgrensede data skal forholde
 seg dette i sitt arbeid.
 
@@ -32,7 +31,7 @@ sikkerhetsinstruksen og at denne etterleves.
 Hver person som skal jobbe med tidsavgrensede data må i forkant
 av utleveringen skrive under en egenerklæring som bekrefter at slike data
 er mottat. Ved gyldighetsperiodens slutt signeres et nytt felt i samme
-erklæring som bekreftelse på at data er slettet i henhold til de
-prosedyrer som sikkerhetsinstruksen gir. Alle egenerklæringer
-oppbevares ved stabsenheten og vil inngå som en del av
-virksomhetens dokumentasjon på egne sikkerhetstiltak.
+erklæring som bekreftelse på at data er slettet i henhold til de prosedyrer
+som sikkerhetsinstruksen gir. Alle egenerklæringer oppbevares ved stabsenheten
+og vil inngå som en del av virksomhetens dokumentasjon på egne
+sikkerhetstiltak.
