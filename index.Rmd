@@ -4,10 +4,10 @@ author: "Are Edvardsen, SKDE"
 date: '`r Sys.Date()`'
 output:
   pdf_document:
-    keep_tex: yes
-    latex_engine: xelatex
     includes:
       in_header: preamble.tex
+    keep_tex: yes
+    latex_engine: xelatex
   html_document:
     keep_md: yes
 documentclass: book
@@ -58,14 +58,17 @@ tilgrensende tekst som er særlig verdt å merke seg:
 ```{block2, info-text, type='rmdinfo'}
 Utfyllende opplysninger, men som ikke er vesentlig for å følge
 brukerveiledningen.
+
 ```
 
 ```{block2, important-text, type='rmdimportant'}
 Utheving av et viktig moment.
+
 ```
 
 ```{block2, danger-text, type='rmddanger'}
 Et vesentlig budskap som om det blir misforstått innebærer en fare.
+
 ```
 
 
@@ -91,3 +94,4 @@ Gjeldende status for dokumentet er versjon 0.9 som ligger til godkjenning hos
 ledergruppa ved SKDE. Are Edvardsen har ansvar for innarbeiding av nødvendige
 endringer fortløpende. Det er også mulig for andre å (foreslå) endringer
 direkte i dokumentet ved "pull requests" gjennom [GitHub](https://github.com/areedv/docSens/).
+
